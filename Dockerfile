@@ -15,6 +15,9 @@ RUN npm install
 # ADD package.json yarn.lock /app/
 # RUN yarn install
 
+# requires working backend
+RUN npm run build
+
 COPY . /app/
 
-CMD ["npm", "run", "heroku"]
+CMD ["npm", "run", "start"]

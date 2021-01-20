@@ -6,10 +6,10 @@
     "develop": "next dev",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "heroku": "next build && next start"
+    "heroku": "next build && next start -p $PORT"
   },
   "dependencies": {
     "moment": "^2.24.0",

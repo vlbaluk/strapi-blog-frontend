@@ -19,6 +19,4 @@ RUN npm install
 COPY . /app/
 
 # requires working backend
-RUN npm run build
-
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "heroku"]

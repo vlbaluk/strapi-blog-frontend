@@ -14,10 +14,10 @@ RUN npm install
 # Or if you're using Yarn
 # ADD package.json yarn.lock /app/
 # RUN yarn install
+COPY . /app/
 
 # requires working backend
 RUN npm run build
 
-COPY . /app/
 
 CMD ["npm", "run", "start"]

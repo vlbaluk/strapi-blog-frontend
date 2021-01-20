@@ -7,7 +7,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 ENV NEXT_TELEMETRY_DISABLED 1
 # depends on working backend like: https://strapi-blog-backend
 ARG NEXT_PUBLIC_STRAPI_API_URL
-ARG NEXT_PUBLIC_STRAPI_API_URL_TEST
 
 RUN export
 

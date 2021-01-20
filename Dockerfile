@@ -5,8 +5,8 @@ WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 ENV NEXT_TELEMETRY_DISABLED 1
-# depends on working backend
-#ENV NEXT_PUBLIC_STRAPI_API_URL https://strapi-blog-backend
+# depends on working backend like: https://strapi-blog-backend
+ENV NEXT_PUBLIC_STRAPI_API_URL
 
 COPY package.json package-lock.json /app/
 RUN npm install
@@ -18,6 +18,5 @@ COPY . /app/
 
 # requires working backend
 RUN npm run build
-
 
 CMD ["npm", "run", "start"]

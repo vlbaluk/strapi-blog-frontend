@@ -3,3 +3,5 @@ build:
     web: Dockerfile
   config:
     NEXT_PUBLIC_STRAPI_API_URL: https://strapi-blog-backend-2021.herokuapp.com
+run:
+  web: npm run heroku
